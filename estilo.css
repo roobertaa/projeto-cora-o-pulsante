@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.coracao{
+    background: red;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transform: rotate(-45deg) scale(1);
+    animation: pulsar 5s linear infinite
+}
+
+@keyframes pulsar{
+    0%{transform: rotate(-45deg) scale(1);}
+    10%{transform: rotate(-45deg) scale(1.2);}
+    20%{transform: rotate(-45deg) scale(0.9);}
+    30%{transform: rotate(-45deg) scale(1.1);}
+    40%{transform: rotate(-45deg) scale(0.9);}
+    50%{transform: rotate(-45deg) scale(1.2);}
+    60%{transform: rotate(-45deg) scale(1.0);}
+    70%{transform: rotate(-45deg) scale(1.2);}
+    80%{transform: rotate(-45deg) scale(0.9);}
+    90%{transform: rotate(-45deg) scale(1.1);}
+    100%{transform: rotate(-45deg) scale(0.9);}
+}
